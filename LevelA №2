@@ -1,0 +1,15 @@
+import pandas as pd #Загрузка библиотеки пандас
+
+article = pd.read_csv('For_kontrolnaya.csv', delimiter=';')
+
+names = ['name', 'age', 'randomid']
+
+
+
+article.to_csv("For_kontrolnaya.csv", index=False, sep=";")
+print(article.at[1, 'name']) #Вывод строки 1
+print(article.at[2, 'name']) #Вывод строки 2
+print(article.at[3, 'name']) #Вывод строки 3
+print(article.at[4, 'name']) #Вывод строки 4
+print(article.at[5, 'name']) #Вывод строки 5
+
